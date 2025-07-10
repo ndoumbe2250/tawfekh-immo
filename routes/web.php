@@ -36,20 +36,6 @@ Route::get('/biens/{id}', [AccueilController::class, 'show'])->name('accueil.bie
 Route::view('/chat', 'Accueil.chat')->name('accueil.chat');
 Route::post('/chatagent', [ChatController::class, 'chat'])->name('accueil.chat.post');
 
-
-// Route::get('/', function () {
-//     return view('Accueil.accueil' , compact('nom'));
-// })->name('dashboard');
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard12');
-// })->middleware(['auth', 'verified'])->name('dashboard');;,
-
-// Route::middleware(['auth', 'role:admin'])->group(function () {
-//     Route::get('/dashboard', function () {
-//         return view('dashboard12');
-//     });
-// });
 Route::middleware(['auth', 'role:admin'])->group(function () {
     Route::get('/admin/dashboard', function () {
         return view('dashboard12',
