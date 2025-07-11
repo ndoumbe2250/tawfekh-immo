@@ -14,7 +14,7 @@
                     ['route' => 'dashboard.admin', 'icon' => 'fa-gauge-high', 'label' => 'Dashboard'],
                     ['route' => 'type_properties.index', 'icon' => 'fa-building', 'label' => 'Types de Propriétés'],
                     ['route' => 'properties.index', 'icon' => 'fa-location-dot', 'label' => 'Properties'],
-                    ['route' => 'images.index', 'icon' => 'fa-location-dot', 'label' => 'Images des Propriétés'],
+                    ['route' => 'images.index', 'icon' => 'fa-solid fa-images', 'label' => 'Images des Propriétés'],
                     ['route' => 'contacts.index', 'icon' => 'fa-envelope', 'label' => 'Contacts'],
                     ['route' => 'programer_visites.index', 'icon' => 'fa-calendar-days', 'label' => 'Programmer Visites'],
                     
