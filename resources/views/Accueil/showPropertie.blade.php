@@ -644,8 +644,8 @@
                             <h5 class="mb-3">Contactez l'agent</h5>
                             <form action="{{route('programer_visites.store')}}" method="POST" class="form">
                                 @csrf
-                                <input type="text" name="property_id" value="{{ $propriété->id }}">
-                                <input type="text" name="agent_id" value="{{ $propriété->agent->id }}" >
+                                <input type="text" name="property_id" value="{{ $propriété->id }}" hidden>
+                                <input type="text" name="agent_id" value="{{ $propriété->agent->id }}" hidden>
                                 <input type="tel" class="form-control" placeholder="Votre téléphone">
                                 <textarea class="form-control" rows="4" placeholder="Votre message" name="message" required>Je suis intéressé(e) par ce bien. Pouvez-vous me contacter ?</textarea>
                                 <input type="date" id="date" class="form-control" name="visit_date" required >
